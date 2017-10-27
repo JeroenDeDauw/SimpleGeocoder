@@ -1,9 +1,9 @@
 {
-	"name": "such/new-project",
+	"name": "jeroen/simple-geocoder",
 	"license": "GPL-2.0+",
 	"description": "",
 	"require": {
-		"php": ">=7.1"
+		"php": ">=7.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~6.2",
@@ -15,12 +15,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Such\\NewProject\\": "src/"
+			"Jeroen\\SimpleGeocoder\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Such\\NewProject\\Tests\\": "tests/"
+			"Jeroen\\SimpleGeocoder\\Tests\\": "tests/"
 		}
 	},
 	"extra": {
