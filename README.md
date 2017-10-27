@@ -1,6 +1,6 @@
 # PHP Project Template
 
-[![Build Status](https://travis-ci.org/JeroenDeDauw/new-php-project.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/new-php-project)
+[![Build Status](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder)
 
 PHP 7.0+ library providing a simple and minimalistic Geocoder interface with some basic implementations.
 
