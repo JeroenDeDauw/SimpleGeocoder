@@ -1,8 +1,32 @@
-# PHP Project Template
+# Simple Geocoder
 
 [![Build Status](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder)
 
 PHP 7.0+ library providing a simple and minimalistic Geocoder interface with some basic implementations.
+
+```php
+interface Geocoder {
+	/**
+	 * @return LatLongValue|null
+	 */
+	public function geocode( string $address );
+}
+```
+
+This library is based on code extracted from the [Maps extension for MediaWiki](https://github.com/JeroenDeDauw/Maps).
+
+Geocoders using real geocoding services:
+
+* GeoNamesGeocoder
+* GoogleGeocoder
+* NomatimGeocoder
+
+Decorators and trivial implementations:
+
+* InMemoryGeocoder
+* NullGeocoder
+* StubGeocoder
+* CoordinateFriendlyGeocoder
 
 ## Installation
 

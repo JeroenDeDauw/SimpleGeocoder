@@ -167,6 +167,7 @@
 			"/>
             <property name="enableVoidTypeHint" value="false" />
         </properties>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint" />
     </rule>
 
     <rule ref="./vendor/slevomat/coding-standard/SlevomatCodingStandard/Sniffs/Namespaces/UseDoesNotStartWithBackslashSniff.php" />

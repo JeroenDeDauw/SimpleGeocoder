@@ -1,9 +1,12 @@
 {
 	"name": "jeroen/simple-geocoder",
 	"license": "GPL-2.0+",
-	"description": "",
+	"description": "Simple and minimalistic Geocoder interface with some basic implementations",
 	"require": {
-		"php": ">=7.0"
+		"php": ">=7.0",
+		"data-values/geo": "~2.0",
+		"jeroen/file-fetcher": "~4.0",
+		"jeroen/simple-cache": "~2.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~6.2",
