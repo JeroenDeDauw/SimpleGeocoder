@@ -22,6 +22,10 @@ Geocoders using real geocoding services over HTTP:
 * `GoogleGeocoder`
 * `NomatimGeocoder`
 
+Adapters:
+
+* `GeocoderPhpAdapter` - adapts to the popular PHP [Geocoder library](https://github.com/geocoder-php/Geocoder)
+
 Trivial implementations (great for testing):
 
 * `InMemoryGeocoder`
@@ -88,10 +92,11 @@ To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
 * Installation with DataValues Geo 3.x is now allowed
 
-### 1.0.0 (2017-11-22)
+### 1.0.0 (2017-11-02)
 
 Initial release as standalone component with
 
 * FileFetcher based geocoders: `GeoNamesGeocoder`, `GoogleGeocoder`, `NomatimGeocoder`
 * Trivial implementations: `InMemoryGeocoder`, `NullGeocoder`, `StubGeocoder`
 * Decorators: `CoordinateFriendlyGeocoder`
+
