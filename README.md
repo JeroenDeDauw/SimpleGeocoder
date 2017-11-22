@@ -1,6 +1,8 @@
 # Simple Geocoder
 
 [![Build Status](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder)
+[![Latest Stable Version](https://poser.pugx.org/jeroen/simple-geocoder/version.png)](https://packagist.org/packages/jeroen/simple-geocoder)
+[![Download count](https://poser.pugx.org/jeroen/simple-geocoder/d/total.png)](https://packagist.org/packages/jeroen/simple-geocoder)
 
 PHP 7.0+ library providing a simple and minimalistic Geocoder interface with some basic implementations.
 
