@@ -7,26 +7,30 @@ PHP 7.0+ library providing a simple and minimalistic Geocoder interface with som
 ```php
 interface Geocoder {
 	/**
+	 * Returns null when no result is found or when an error occurs.
 	 * @return LatLongValue|null
 	 */
 	public function geocode( string $address );
 }
 ```
 
+Geocoders using real geocoding services over HTTP:
+
+* `GeoNamesGeocoder`
+* `GoogleGeocoder`
+* `NomatimGeocoder`
+
+Trivial implementations (great for testing):
+
+* `InMemoryGeocoder`
+* `NullGeocoder`
+* `StubGeocoder`
+
+Decorators:
+
+* `CoordinateFriendlyGeocoder`
+
 This library is based on code extracted from the [Maps extension for MediaWiki](https://github.com/JeroenDeDauw/Maps).
-
-Geocoders using real geocoding services:
-
-* GeoNamesGeocoder
-* GoogleGeocoder
-* NomatimGeocoder
-
-Decorators and trivial implementations:
-
-* InMemoryGeocoder
-* NullGeocoder
-* StubGeocoder
-* CoordinateFriendlyGeocoder
 
 ## Installation
 
@@ -80,4 +84,8 @@ To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
 ### 1.0.0 (2017-11-22)
 
-* Initial release
+Initial release as standalone component with
+
+* FileFetcher based geocoders: `GeoNamesGeocoder`, `GoogleGeocoder`, `NomatimGeocoder`
+* Trivial implementations: `InMemoryGeocoder`, `NullGeocoder`, `StubGeocoder`
+* Decorators: `CoordinateFriendlyGeocoder`
