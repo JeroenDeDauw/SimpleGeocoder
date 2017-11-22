@@ -75,3 +75,9 @@ To run just the PHPUnit tests run
 To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
     docker-compose run --rm app ./vendor/bin/phpunit --filter SomeClassNameOrFilter
+
+## Release notes
+
+### 1.0.0 (2017-11-22)
+
+* Initial release
