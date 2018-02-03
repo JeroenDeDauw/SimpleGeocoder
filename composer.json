@@ -1,6 +1,6 @@
 {
 	"name": "jeroen/simple-geocoder",
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"description": "Simple and minimalistic Geocoder interface with some basic implementations",
 	"require": {
 		"php": ">=7.0",
