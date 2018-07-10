@@ -13,8 +13,6 @@ use ValueParsers\ParseException;
  * Geocoder decorator that tries to parse the address as coordinates
  * and only upon failure does the actual geocoding.
  *
- * @since 5.0
- *
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */

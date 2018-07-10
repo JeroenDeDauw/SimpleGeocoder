@@ -12,8 +12,6 @@ use Jeroen\SimpleGeocoder\Geocoder;
 /**
  * Webservice documentation: http://code.google.com/apis/maps/documentation/geocoding/
  *
- * @since 4.5
- *
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
