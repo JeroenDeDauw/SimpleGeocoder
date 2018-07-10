@@ -88,8 +88,9 @@ To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
 ## Release notes
 
-### 1.2.0 (dev)
+### 1.2.0 (2018-07-10)
 
+* Added `GeocoderPhpAdapter` that allows using the popular PHP [Geocoder library](https://github.com/geocoder-php/Geocoder)
 * Installation with DataValues Geo 4.x is now allowed
 
 ### 1.1.0 (2018-03-20)
