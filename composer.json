@@ -4,7 +4,7 @@
 	"description": "Simple and minimalistic Geocoder interface with some basic implementations",
 	"require": {
 		"php": ">=7.0",
-		"data-values/geo": "~3.0|~2.0",
+		"data-values/geo": "~4.0@dev|~3.0|~2.0",
 		"jeroen/file-fetcher": "~4.0",
 		"willdurand/geocoder": "~4.1"
 	},
@@ -33,7 +33,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "1.1.x-dev"
+			"dev-master": "1.2.x-dev"
 		}
 	}
 }
