@@ -88,6 +88,10 @@ To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
 ## Release notes
 
+### 1.3.0 (2019-01-18)
+
+* Installation with FileFetcher 6.x is now allowed
+
 ### 1.2.0 (2018-07-10)
 
 * Added `GeocoderPhpAdapter` that allows using the popular PHP [Geocoder library](https://github.com/geocoder-php/Geocoder)
