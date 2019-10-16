@@ -2,6 +2,14 @@
 	"name": "jeroen/simple-geocoder",
 	"license": "GPL-2.0-or-later",
 	"description": "Simple and minimalistic Geocoder interface with some basic implementations",
+	"authors": [
+		{
+			"name": "Jeroen De Dauw",
+			"email": "jeroendedauw@gmail.com",
+			"homepage": "https://www.entropywins.wtf/",
+			"role": "Developer"
+		}
+	],
 	"require": {
 		"php": ">=7.0",
 		"data-values/geo": "~4.0|~3.0|~2.0",
