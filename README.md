@@ -1,6 +1,6 @@
 # Simple Geocoder
 
-[![Build Status](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder.svg?branch=master)](https://travis-ci.org/JeroenDeDauw/SimpleGeocoder)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JeroenDeDauw/SimpleGeocoder/CI)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/JeroenDeDauw/SimpleGeocoder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/JeroenDeDauw/SimpleGeocoder/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/jeroen/simple-geocoder/version.png)](https://packagist.org/packages/jeroen/simple-geocoder)
 [![Download count](https://poser.pugx.org/jeroen/simple-geocoder/d/total.png)](https://packagist.org/packages/jeroen/simple-geocoder)
