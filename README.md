@@ -90,6 +90,10 @@ To run only a subset of PHPUnit tests or otherwise pass flags to PHPUnit, run
 
 ## Release notes
 
+### 1.3.1 (2020-08-19)
+
+* Updated attribution
+
 ### 1.3.0 (2019-01-18)
 
 * Installation with FileFetcher 6.x is now allowed
