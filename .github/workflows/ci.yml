@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ "*" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  test:
+    name: "PHPUnit with PHP ${{ matrix.php }}"
+
+    strategy:
+      matrix:
+        php: [7.0, 7.1, 7.2, 7.3, 7.4]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring
+          tools: composer, cs2pr
+
+      - name: Cache Composer cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.composer/cache
+          key: composer-cache
+
+      - uses: actions/checkout@v2
+        with:
+          path: mediawiki/extensions/Network
+
+      - name: Composer install
+        run: composer install --no-progress --no-suggest --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: PHPUnit
+        run: php vendor/bin/phpunit
+
+  static-analysis:
+    name: "Static Analysis"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: mbstring
+          tools: composer, cs2pr
+
+      - name: Cache Composer cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.composer/cache
+          key: composer-cache
+
+      - uses: actions/checkout@v2
+        with:
+          path: mediawiki/extensions/Network
+
+      - name: Composer install
+        run: composer install --no-progress --no-suggest --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Covers validator
+        run: php vendor/bin/covers-validator
+
+      - name: PHPStan
+        run: php vendor/bin/phpstan analyse --level=1 --error-format=checkstyle --no-progress src/ tests/ | cs2pr
+
+      - name: PHPCS
+        run: php vendor/bin/phpcs -q --report=checkstyle --no-colors | cs2pr
