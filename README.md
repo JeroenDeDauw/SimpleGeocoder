@@ -1,6 +1,6 @@
 # Simple Geocoder
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JeroenDeDauw/SimpleGeocoder/CI)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JeroenDeDauw/SimpleGeocoder/CI)](https://github.com/JeroenDeDauw/SimpleGeocoder/actions?query=workflow%3ACI)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/JeroenDeDauw/SimpleGeocoder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/JeroenDeDauw/SimpleGeocoder/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/jeroen/simple-geocoder/version.png)](https://packagist.org/packages/jeroen/simple-geocoder)
 [![Download count](https://poser.pugx.org/jeroen/simple-geocoder/d/total.png)](https://packagist.org/packages/jeroen/simple-geocoder)
