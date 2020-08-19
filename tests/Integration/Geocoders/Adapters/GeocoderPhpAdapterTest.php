@@ -32,7 +32,7 @@ class GeocoderPhpAdapterTest extends TestCase {
 			file_get_contents( __DIR__ . '/GoogleMaps-NewYork.txt' )
 		) );
 
-		$phpGeocoder = new GoogleMaps( $httpClient );
+		$phpGeocoder = new GoogleMaps( $httpClient, null, 'demoKey' );
 
 		$simpleGeocoder = new GeocoderPhpAdapter( $phpGeocoder );
 

@@ -38,6 +38,7 @@ class GeocoderPhpAdapter implements Geocoder {
 			);
 		}
 		catch ( Exception $ex ) {
+			// TODO: logging option
 			return null;
 		}
 
