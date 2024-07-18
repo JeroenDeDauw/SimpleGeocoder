@@ -27,7 +27,7 @@
 
 		"geocoder-php/google-maps-provider": "~4.1",
 		"php-http/mock-client": "~1.0",
-		"guzzlehttp/psr7": "~1.4"
+		"guzzlehttp/psr7": "~2.7"
 	},
 	"autoload": {
 		"psr-4": {
